@@ -1,7 +1,7 @@
-title: devlopr
-subtitle: A Jekyll Theme Built for Developers
+title: manna
+subtitle: my personal blog
 description: >- # this means to ignore newlines until "baseurl:"
-  devlopr-jekyll is a Jekyll Theme Built For Developers
+  Welcome to my blog.. Hope you love it !!
 
 url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -25,12 +25,12 @@ urls:
 # Edit these details
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
+author: Mohit Manna
+author_bio: Hi, my name is John Doe. I love coding,eating and playing :D
 author_email: "johndoe@gmail.com"
 author_location: India
 author_website_url: "http://johndoe.com"
-typewrite-text: devlopr is a jekyll theme built for developers. You can edit this in _config.yml file
+typewrite-text: Welcome to my blog. Hope you love it !!
 
 author_work_experiences:
             - company_name: Google
@@ -67,12 +67,12 @@ author_project_details:
                 visibility: true
 
 # social links
-twitter_username: johndoe
+twitter_username: manna_018
 github_username:  sujaykundu777
-facebook_username: johndoe
-linkedin_username: johndoe
+facebook_username: manna018
+linkedin_username: manna018
 behance_username: johndoe
-instagram_username: johndoe
+instagram_username: manna018
 medium_username: johndoe
 telegram_username: johndoe
 dribbble_username: johndoe
