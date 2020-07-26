@@ -49,3 +49,4 @@ if (theme === "dark") {
 	document.getElementById("theme-toggle").checked = true;
 	// document.getElementById("theme-toggle").innerHTML = "Dark Mode";
 }
+

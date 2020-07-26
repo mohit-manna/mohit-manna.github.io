@@ -1,0 +1,36 @@
+Parents,Skill,Hours
+Basics,C,50
+Basics,C++,70
+Software Development,Java,70
+Software Development,C#,20
+Software Development,VB .Net,15
+Web Devlopment,ASP .Net,15
+Basics,Scala,25
+Big Data,Spark,30
+Basics,Python,60
+Data Analysis,Matplotlib,40
+Web Devlopment,Flask,50
+Data Analysis,NLP,20
+Big Data,Nifi,100
+Big Data,Sqoop,60
+Data Analysis,Tweepy,10
+App Development,Android,80
+Data Analysis,Plotly,50
+Big Data,Airflow,10
+Big Data,Hive,18
+Big Data,MongoDB,8
+Basics,Mysql,40
+Web Devlopment,html,30
+Web Devlopment,css,10
+Web Devlopment,jekyll,15
+Web Devlopment,jquery,10
+Web Devlopment,Javascript,25
+Basics,bash,25
+Web Devlopment,JSP,20
+Big Data,Hbase,10
+Big Data,Kafka,8
+Big Data,Flume,15
+Big Data,Pig,5
+Big Data,AWS,30
+Web Devlopment,Bootstrap,28
+Web Devlopment,php,10
