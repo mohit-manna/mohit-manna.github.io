@@ -98,14 +98,20 @@ layout: default
 
       {%- include author_skills.html -%}
     </div>
-
+<!-- 
     {% if site.wakatime_username %}
     <div class="card">
       <h1>Coding Activity</h1>
 
       {%- include coding_activity.html -%}
     </div>
-    {% endif %}
+    {% endif %} -->
+
+    <div class="card">
+      <h1>Coding Activity</h1>
+      {%- include coding_activity.html -%}
+      {%- include coding_activity_pie.html -%}
+    </div>
   </div>
   <div class="col-lg-7">
     {% if site.author_bio %}
@@ -187,3 +193,4 @@ layout: default
     {% endif %}
   </div>
 </div>
+

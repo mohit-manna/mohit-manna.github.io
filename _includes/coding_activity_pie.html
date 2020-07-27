@@ -1,0 +1,31 @@
+<div id="skills_pie"></div>
+<script>
+function makeplotPie() {
+    console.log("Pie");
+    Plotly.d3.csv("{{site.url}}{{site.baseurl}}/assets/dataset/CodingActivity.csv", function(data){ processPieData(data) } );
+  };
+  
+  function processPieData(allRows) {
+  
+    console.log("all Pie Data");
+    var set1=new Set();
+    for (var i=0; i<allRows.length; i++) {
+      row = allRows[i];
+      set1.add(row['Parents']);
+    }
+    var x=[],y=[];
+  
+    for (var i=0; i<allRows.length; i++) {
+        row = allRows[i];
+        x.push( row['Skill'] ); 
+        y.push( row['Hours'] ); 
+    }
+    var trace=[{ labels: x,values: y,type: 'pie',hole: .4,textinfo: 'none'}];
+    var layout = {
+        title: "Manna's Skill Set",
+        font:{family: 'Raleway, sans-serif'}
+    };
+    Plotly.newPlot('skills_pie', trace,layout);
+  };
+  makeplotPie();
+</script>

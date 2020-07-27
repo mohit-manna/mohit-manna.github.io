@@ -1,21 +1,17 @@
 <!-- Wakatime ( Replace with your own wakatime embed config at https://wakatime.com )-->
 
 <!-- Languages  -->
-<figure>
+<!-- <figure>
     <embed src="https://wakatime.com/share/@sujaykundu777/e4c2a44e-390d-41f3-a4c8-b23b05fbec30.svg"></embed>
 </figure>
 
-<!-- Hours Coded -->
+
 <figure>
     <embed src="https://wakatime.com/share/@sujaykundu777/5fcfa63e-9357-44d1-9a49-5244504a1f13.svg"></embed>
-</figure>
+</figure> -->
+<div id="tester"></div>
+<div id='skills_bar'></div>
 
-<div id='tester'>
-
-</div>
-<div id='tester2'>
-
-</div>
 <script>
     function makeplot() {
     Plotly.d3.csv("{{site.url}}{{site.baseurl}}/assets/dataset/CodingActivity.csv", function(data){ processData(data) } );
@@ -23,8 +19,6 @@
   };
   
   function processData(allRows) {
-  
-    console.log(allRows);
     var x = [], y = [], standard_deviation = [];
   
     for (var i=0; i<allRows.length; i++) {
@@ -62,9 +56,8 @@ function makePlotly( x, y, standard_deviation ){
   bargap :0.05
 };
 
-  Plotly.newPlot('tester2', traces,
-    layout);
+  Plotly.newPlot('skills_bar', traces,layout);
+  console.log("bar");
 };
-
 makeplot();
 </script>
