@@ -23,6 +23,7 @@ urls:
 author_logo: profile.png
 author: Mohit Manna
 author_bio: Hi, my name is Mohit Manna. I am a Data Engineer who knows about coding and other stuffs 
+author_hobbies: Playing outdoor games(Cricket, Football and Volleyball). 
 author_email: "mohitmanna49@gmail.com"
 author_location: India
 author_website_url: "http://manna018.github.io"
@@ -57,15 +58,25 @@ author_education_details:
                 visibility: true
 
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: dca.png
+                project_title: Data Accelerator
+                project_description: A Web Based Generic Data Ingestion, Quality and Validation Platform
+                #project_url: 
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
+              - project_thumbnail: budding.png
+                project_title: Budding Bee
+                project_description: Simple Website for an Event Management Organisation
+                project_url: https://budding-bee.github.io/
+                visibility: true
+              - project_thumbnail: trendbot.png
+                project_title: Trend Bot for Twitter
+                project_description: An App which helps you to from Background Task. !
+                project_url: https://play.google.com/store/apps/details?id=com.incrementors.trendbot
+                visibility: true
+              - project_thumbnail: twitcrawl.png
+                project_title: TwitCrawl
+                project_description: A Basic College Project to showcase NLP and Data Analysis Learning
+                project_url: http://twitcrawl.herokuapp.com
                 visibility: true
 
 # social links

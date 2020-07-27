@@ -8,9 +8,10 @@ layout: default
       <a href="/">
         <img src="{{site.url}}{{site.baseurl}}/assets/img/{{ site.author_logo }}" class="profile-img" />
       </a>
-      <h1 class="profile-name">{{ site.title }}</h1>
+      <h1 class="profile-name">Mohit Manna</h1>
       <p class="profile-bio">{{ site.subtitle }}</p>
-      {% if site.github_username %} {%- include github_follow_button.html -%} {%
+      {% if site.github_username %}
+       {%- include github_follow_button.html -%} {%
       endif %}
 
       <p class="profile-links">
@@ -119,7 +120,16 @@ layout: default
       <h1 class="card-title">About</h1>
       <p>{{ site.author_bio }}</p>
     </div>
-    {% endif %} {% if site.show_author_project_details == true %}
+    {% endif %}
+
+    {% if site.author_hobbies %}
+    <div class="card">
+      <h1 class="card-title">Hobbies</h1>
+      <p>{{ site.author_hobbies }}</p>
+    </div>
+    {% endif %}
+
+    {% if site.show_author_project_details == true %}
     <div id="author_projects" class="card">
       <h1 class="card-title">Projects</h1>
       <br />
