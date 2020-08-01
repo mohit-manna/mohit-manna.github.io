@@ -7,7 +7,7 @@ thumbnail: /assets/img/posts/calculator_c.png
 category: c
 summary: "Simple calculator in C with console based Menu. "
 ---
-### Write a program to create a Simple Calculator
+### A simple program to create a Simple Calculator
 ```
 #include<stdio.h>
 #include<conio.h>
