@@ -1,0 +1,22 @@
+{
+  "name": "Manna Blog",
+  "homepage": "https://github.com/mannna018/manna018.github.io",
+  "authors": [
+    "Mohit Manna <mohitmanna49@gmail.com>"
+  ],
+  "description": "Blog on Tech and Fun",
+  "main": "",
+  "keywords": [
+    "jekyll-theme",
+    "jekyll",
+    "gallery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
