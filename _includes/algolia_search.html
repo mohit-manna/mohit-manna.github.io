@@ -1,5 +1,5 @@
 <style>
-    #search-searchbar{
+#search-searchbar{
       width: 100%;
       text-align: center;
       margin-top: 20px;
@@ -25,11 +25,11 @@
 
     <script>
     /* Instanciating InstantSearch.js with Algolia credentials */
-    const search = instantsearch({
-      appId: '{{ site.algolia.application_id }}',
-      indexName: '{{ site.algolia.index_name }}',
-      apiKey: '{{ site.algolia.search_only_api_key }}'
-    });
+    // const search = instantsearch({
+    //   appId: '{{ site.algolia.application_id }}',
+    //   indexName: '{{ site.algolia.index_name }}',
+    //   apiKey: '{{ site.algolia.search_only_api_key }}'
+    // });
 
     search.addWidget(
       instantsearch.widgets.searchBox({
@@ -68,3 +68,28 @@
     search.start();
 
     </script>
+
+    <!-- Html Elements for Search -->
+<div  class="card blog-post">
+<div id="search-container" class="card-body center">
+  <input type="text" id="search-input" placeholder="search..." style="width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;">  
+</div>
+</div>
+<div id="results-container"></div>
+  <!-- Script pointing to search-script.js -->
+
+<!-- or without installing anything -->
+<script src="{{site.url}}{{site.baseurl}}/assets/js/simple-jekyll-search.min.js"></script>
+  <!-- Configuration -->
+  <script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.txt'
+  })
+  </script>
