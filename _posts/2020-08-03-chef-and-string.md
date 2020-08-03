@@ -14,21 +14,21 @@ Having already mastered cooking, Chef has now decided to learn how to play the g
 
 > Input
 >
-> 2 *t-No of Test Cases*
-> 6 *First Test Case: N- No of times chef has to pluck string*
-> 1 6 11 6 10 11 *sequence of strings plucked*
-> 4 *Second Test Case: N- No of times chef has to pluck string*
-> 1 3 5 7 *sequence of strings plucked*
+> 2 *t-No of Test Cases* <br />
+> 6 *First Test Case: N- No of times chef has to pluck string* <br />
+> 1 6 11 6 10 11 *sequence of strings plucked* <br />
+> 4 *Second Test Case: N- No of times chef has to pluck string* <br />
+> 1 3 5 7 *sequence of strings plucked* <br />
 >
 > Output: 15
 >
-> Test Case 1
-> *Chef skips 4 strings (2,3,4,5) to move from 1 to 6
-> Chef skips 4 strings (7,8,9,10) to move from 6 to 11
-> Chef skips 4 strings (10,9,8,7) to move from 11 to 6
-> Chef skips 3 strings (7,8,9) to move from 6 to 10
-> Chef skips 0 strings to move from 10 to 11
-> Therefore, the answer is 4+4+4+3+0*=**15**
+> Test Case 1 <br />
+> *Chef skips 4 strings (2,3,4,5) to move from 1 to 6* <br />
+> *Chef skips 4 strings (7,8,9,10) to move from 6 to 11* <br />
+> *Chef skips 4 strings (10,9,8,7) to move from 11 to 6* <br />
+> *Chef skips 3 strings (7,8,9) to move from 6 to 10* <br />
+> *Chef skips 0 strings to move from 10 to 11* <br />
+> *Therefore, the answer is 4+4+4+3+0*=**15** <br />
 
 [Chef and Strings](https://www.codechef.com/problems/CHEFSTR1)
 
