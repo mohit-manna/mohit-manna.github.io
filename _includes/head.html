@@ -63,14 +63,14 @@
   {% endif %}
 
   {% if page.url %}
-  <meta name="twitter:url" content="{{ site.url }}{{site.baseurl}}{{ page.url }}" />
+  <meta name="og:url" content="{{ site.url }}{{site.baseurl}}{{ page.url }}" />
   {% endif %} {% if page.summary %}
-  <meta name="twitter:description" content="{{ page.summary }}" />
+  <meta name="og:description" content="{{ page.summary }}" />
   {% else %}
-  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="og:description" content="{{ site.description }}" />
   {% endif %} {% if page.header-img %}
   <meta
-    name="twitter:image:src"
+    name="og:image"
     content="{{ site.url }}{{site.baseurl}}{{ page.thumbnail }}"
   />
   {% endif %}
