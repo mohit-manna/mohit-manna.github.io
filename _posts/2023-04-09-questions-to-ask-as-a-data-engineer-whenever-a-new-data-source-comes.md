@@ -4,7 +4,7 @@ author: Mohit Manna
 title: "Questions to ask as a Data Engineer whenever a new data source comes "
 date: 2023-03-07T18:33:36.055Z
 thumbnail: /assets/img/posts/fp-graph-dataeng.jpg
-category: Data Engineering
+category: data_engineering
 summary: "Source: Fundamentals of Data Engineering . There are many things to
   consider when assessing source systems, including how the system handles
   ingestion, state, and data generation. The following is a starting set of
