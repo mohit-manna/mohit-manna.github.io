@@ -1,6 +1,6 @@
 ---
 layout: post
-author: John Doe
+author: Mohit Manna
 title: Kafka Nifi HDFS
 date: 2020-05-13T09:52:20.613Z
 thumbnail: /assets/img/posts/fp-graph-dataeng.jpg
