@@ -3,7 +3,7 @@ layout: post
 author: John Doe
 title: Kafka Nifi HDFS
 date: 2020-05-13T09:52:20.613Z
-thumbnail: https://imgur.com/jQN3txl
+thumbnail: /assets/img/posts/fp-graph-dataeng.jpg
 category: hadoop
 summary: A small setup which showcases integration of Nifi, Kafka and HDFS
 ---
