@@ -119,4 +119,8 @@ N﻿ow, I need to figure out a way in UserLand so that whenever the phone restar
 
 T﻿he benefit of using above script is that you dont need extra effort to pull fresh code from your repo.
 
-I﻿f you really want to keep it running, **don't forget to charge your phone every third day**. In the gunicorn command written above option `-w 4 `  means 4 workers. I have just one user and he doesn't feel any difference if the worker is one or four. For large number of users it can have some positive results. So we can reduce it to 1 too.
+I﻿f you really want to keep it running, **don't forget to charge your phone every third day**. In the gunicorn command written above option `-w 4 `  means 4 workers. I have just one user and he doesn't feel any difference if the worker is one or four. For large number of users it can have some positive results. So we can reduce it to 1 too. 
+
+T﻿here are some funny comments in  the post: 
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/zvwVnsL"  ><a href="//imgur.com/a/zvwVnsL">Android as a Server</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
