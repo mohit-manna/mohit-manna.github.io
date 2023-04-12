@@ -11,7 +11,7 @@ summary: We all have old smartphones in our homes. There are many ways to reuse
 # Why did I do this ?
 
 I have a personal website written in Flask and JavaScript which I wrote back in winter of 2020 when I was trying my hands on Flask, Mongo DB and JavaScript.
-I wrote the website in order to learn Flask and Mongo. It is not quite polished one but I do have a regular user who uses it daily. My only motivations to keep it running. 
+I wrote the website in order to learn Flask and Mongo. It is not quite polished one but I do have a regular user who uses it daily. My only motivation to keep it running. 
 I have been hosting it in AWS EC2 Free Tier accounts since 2020 but was fed up of ignoring AWS Bill mails and redeploying everything in new account whenever account got seized by AWS.
 As I write this blog AWS is asking for Rs 800/mnth for AWS Micro instance. As far as I can remember I've been paying Rs 140/mnth for same thing in 2021. So I can not rely much on AWS.
 Also, the website that I wrote is not completely deployed in AWS! The Database is in MonogDB Cloud (Another Free Service). So even if my website goes down the data is safe, only the webserver stops. 
@@ -48,13 +48,13 @@ T﻿hey will block you from installing some libraries and we will have no clue w
 
 **Steps to host Flask Website in Android Phone:**
 
-1﻿.[Userland](https://play.google.com/store/apps/details?id=tech.ula&hl=en&gl=US&pli=1) install this app in the android phone and choose ubuntu.
+1﻿. [Userland](https://play.google.com/store/apps/details?id=tech.ula&hl=en&gl=US&pli=1) install this app in the android phone and choose ubuntu.
 
 I﻿ also tried termux but it didn't allow me to install a python library which was needed in my Flask App. 
 
-2﻿.Open the app and set password for root user.
+2﻿. Open the app and set password for root user.
 
-3﻿.Lock the app in background so it can't be killed by mistake.
+3﻿. Lock the app in background so it can't be killed by mistake.
 
 4﻿.Now to run next steps you can either ssh into this Android Device from your PC or you can use the app directly. Doing ssh will be easy. I recommend it but the ssh service in Userland is not very stable for unknown reasons. Sometimes it stop responding in the port. 
 T﻿he ssh service runs on port 2022.
@@ -118,3 +118,5 @@ tmux detach -s flask_session
 N﻿ow, I need to figure out a way in UserLand so that whenever the phone restarts it should trigger on its own. One possible way is adding it into crontab.
 
 T﻿he benefit of using above script is that you dont need extra effort to pull fresh code from your repo.
+
+I﻿f you really want to keep it running, **don't forget to charge your phone every third day**. In the gunicorn command written above option `-w 4 `  means 4 workers. I have just one user and he doesn't feel any difference if the worker is one or four. For large number of users it can have some positive results. So we can reduce it to 1 too.
