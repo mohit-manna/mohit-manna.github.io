@@ -124,3 +124,7 @@ I﻿f you really want to keep it running, **don't forget to charge your phone ev
 T﻿here are some funny comments in  the post: 
 
 <blockquote class="imgur-embed-pub" lang="en" data-id="a/zvwVnsL"  ><a href="//imgur.com/a/zvwVnsL">Android as a Server</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+
+
+A﻿nother Post I found https://lbrito1.github.io/blog/2020/02/repurposing-android.html
