@@ -3,7 +3,7 @@ layout: post
 author: Mohit Manna
 title: How I reused my old smartphone to host a website
 date: 2023-04-01T10:18:57.916Z
-thumbnail: https://i.imgur.com/k4AbM1V.jpeg
+thumbnail: /assets/img/posts/android_as_server.jpg
 category: python
 summary: We all have old smartphones in our homes. There are many ways to reuse
   them but this is one of the most interesting use I have discovered
@@ -60,33 +60,35 @@ I﻿ also tried termux but it didn't allow me to install a python library which 
 T﻿he ssh service runs on port 2022.
 f﻿irst in android device run command 
 
-`
-$﻿hostname -I`﻿
+`$﻿hostname -I`﻿
 
-I﻿t will give a local ip address e.g. `
-1﻿92.168.1.2`﻿
+I﻿t will give a local ip address e.g. `1﻿92.168.1.2`﻿
 T﻿his will keep changing normally according to your router configuration. 
 
-T﻿o ssh run in your PC:`
-$﻿ssh root@192.168.1.2 -p 2022`﻿
+T﻿o ssh run in your PC:`$﻿ssh root@192.168.1.2 -p 2022`﻿
 
 T﻿his will ask for password that we kept while setting UserLand App.
 
 I﻿f the ssh is not working properly check service and if not working start it. 
 
-5.Now we will have to put our flask code in git. Configure Userland's ssh keys in your git hub account and clone it inside Userland at root user's home folder`
-$﻿git clone <repo link>`﻿
+5.Now we will have to put our flask code in git. Configure Userland's ssh keys in your git hub account and clone it inside Userland at root user's home folder`$﻿git clone <repo link>`﻿
 
-Now Install Tmux inside it
+6.Now Install Tmux inside it
 
-6Now you will need one out of these two apps:
- ﻿       6.a.**ngrok** : benefits of using ngrok is that it is more stable and I feel better latency. It has paid plans and many exciting features. The only con is domain name keep changing everytime you run it. 
+7.Now you will need one out of these two apps:
+
+\    7.a.**ngrok** : benefits of using ngrok is that it is more stable and I feel better latency. It has paid plans and many exciting features. The only con is domain name keep changing everytime you run it. 
 e﻿.g. `xxyxzgdshf.yourdomain.ngrok.io` 
+
+
 S﻿o everytime you restart the service you will have to inform your users about new url.
- ﻿      6.b.[serveo](http://serveo.net/) It is free simple to use. Just one feature and the domain name doesn't change.
+
+\    7.b.[serveo](http://serveo.net/) It is free simple to use. Just one feature and the domain name doesn't change.
+
+
 e﻿.g. `abc.serveo.net`
 
-8﻿.Now check if python is install. Check pip. create a virtualenv venv in home location of root user.C
+8﻿.Now check if python is installed. Check pip. create a virtualenv venv in home location of root user.
 
 9﻿.Use command like below to start both your flask webserver and tunnel.
 
@@ -104,15 +106,15 @@ tmux send-keys -t flask_session:0.0 'cd ~;. venv/bin/activate;cd PMS;git pull;pi
 # create window 2 and run command in it
 tmux new-window -t flask_session:1 -n 'window 2'
 # tunnel
-tmux send-keys -t flask_session:1.0 'cd ~;ssh -R <y﻿ourSiteName>:80:0.0.0.0:5000 serveo.net' C-m
+tmux send-keys -t flask_session:1.0 'cd ~;ssh -R <yourSiteName>:80:0.0.0.0:5000 serveo.net' C-m
 # detach
 tmux detach -s flask_session
 ```
-
-
 
 10.We can run these commands independently to test.
 
 1﻿1.Tmux is easy to use. We can check its documents for commands and shortcuts.
 
 N﻿ow, I need to figure out a way in UserLand so that whenever the phone restarts it should trigger on its own. One possible way is adding it into crontab.
+
+T﻿he benefit of using above script is that you dont need extra effort to pull fresh code from your repo.
