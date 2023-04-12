@@ -21,27 +21,43 @@ Once the webserver starts it automatically connects to MongoDB cloud and everyth
 
 MongoDB cloud is free and since I am using storing only textual data. It is quite small. It would be max 5 MB. So it is not going to need paid subscription in near future.
 
+
 #﻿### What about free hosting solutions?
+
 T﻿here are many free hosting solutions on internet which will pop up there when you google. Some of them are: 
+
 1﻿. [Vercel](https://www.qovery.com/)
+
 2﻿. [qovery](https://www.qovery.com/)
+
 3﻿. [PythonAnywhere](https://www.pythonanywhere.com/)
+
 4﻿. [Heroku](https://www.heroku.com/)
+
 5﻿. [Zeet](https://zeet.co/)
 
 a﻿nd many more which I tried before trying this. Some Youtube videos show hsoting in few clicks but when I tried the same steps I landed in Payment page or another AWS account creation page. So using altogether I new service in the place of git actions wasn't worth it for me. 
 
-I﻿ have used PythonAnywhere
+I﻿ have used PythonAnywhere and Heroku before they offer free hosting but the database also needs to be in same environment which is not possible in our case.
+T﻿hey will block you from installing some libraries and we will have no clue why can't we install it. 
+
 #﻿# Things we need 
+
 1﻿. A flask website. Write your own or pick a dummy one.  This flask website I created using virtualenv and installed gunicorn in it. Gunicorn doesn't work in Windows but we just need it while hosting. Rest of the time we can normally run flask app.
 2﻿. An old android phone. I have used Redmi 5 which runs on MIUI 11 which is based on Android Oreo. 
 3﻿. A stable Wifi connection
 
 #﻿ Steps to host Flask Website in Android Phone:
+
 1﻿. [Userland](https://play.google.com/store/apps/details?id=tech.ula&hl=en&gl=US&pli=1) install this app in the android phone and choose ubuntu.
+
+I﻿ also tried termux but it didn't allow me to install a python library which was needed in my Flask App. 
+
 2﻿. Open the app and set password for root user.
-3﻿. Lock the app in background so it can't be killed by mistake. 
-3﻿. Now to run next steps you can either ssh into this Android Device from your PC or you can use the app directly. Doing ssh will be easy. I recommend it but the ssh service in Userland is not very stable for unknown reasons. Sometimes it stop responding in the port. 
+
+3﻿. Lock the app in background so it can't be killed by mistake.
+ 
+4﻿. Now to run next steps you can either ssh into this Android Device from your PC or you can use the app directly. Doing ssh will be easy. I recommend it but the ssh service in Userland is not very stable for unknown reasons. Sometimes it stop responding in the port. 
 T﻿he ssh service runs on port 2022.
 f﻿irst in android device run command 
 
@@ -66,46 +82,54 @@ T﻿his will ask for password that we kept while setting UserLand App.
 
 I﻿f the ssh is not working properly check service and if not working start it. 
 
-4﻿. Now we will have to put our flask code in git. Configure Userland's ssh keys in your git hub account and clone it inside Userland at root user's home folder
+5. Now we will have to put our flask code in git. Configure Userland's ssh keys in your git hub account and clone it inside Userland at root user's home folder
 
 `﻿``
 $﻿git clone <repo link>
 `﻿``
-5﻿. Now Install Tmux inside it
-6﻿. Now you will need one out of these two apps:
+
+6﻿. Now Install Tmux inside it
+
+7﻿. Now you will need one out of these two apps:
  ﻿       6.a. ngrok : benefits of using ngrok is that it is more stable and I feel better latency. It has paid plans and many exciting features. The only con is domain name keep changing everytime you run it. 
 e﻿.g. ` xxyxzgdshf.yourdomain.ngrok.io ` 
 S﻿o everytime you restart the service you will have to inform your users about new url.
  ﻿      6.b. [serveo](http://serveo.net/) It is free simple to use. Just one feature and the domain name doesn't change.
 e﻿.g. `abc.serveo.net`
 
-7﻿. Now create a virtualenv venv in home location of root user.
-8﻿. Use command like below to start both your flask webserver and tunnel.
+8﻿. Now check if python is install. Check pip. create a virtualenv venv in home location of root user.C
 
-`﻿``
-#!/bin/bash
+9﻿. Use command like below to start both your flask webserver and tunnel.
+
+`﻿
+##!/bin/bash
 
 #wget https://storage.googleapis.com/serveo/download/2018-05-08/serveo-linux-amd64
-#crontab -e
+##crontab -e
 #@reboot sleep 60;/root/start-server.sh
 
-# start a new tmux session named 'my_session'
+#start a new tmux session named 'my_session'
 tmux new-session -d -s flask_session
 
-# create window 1 and run flask web app in it
+#create window 1 and run flask web app in it
 tmux send-keys -t flask_session:0.0 'cd ~;. venv/bin/activate;cd PMS;git pull;pip install -r requirements.txt;gunicorn --bind 0.0.0.0:5000 run:gunicorn_app -e FLASK_ENV=prod -e FLASK_APP=run.py --timeout 90 -w 4' C-m
 
-# create window 2 and run command in it
+#create window 2 and run command in it
 tmux new-window -t flask_session:1 -n 'window 2'
 
-#open ngrok in it
+
+#tunnel
+
+
 tmux send-keys -t flask_session:1.0 'cd ~;ssh -R <y﻿ourSiteName>:80:0.0.0.0:5000 serveo.net' C-m
 
-# attach to the tmux sess
-tmux detach -s flask_session
-`﻿``
+#detach
 
-9﻿. We can run these commands independently to test. 
-1﻿0. Tmux is easy to use. We can check its documents for commands and shortcuts.
+tmux detach -s flask_session
+`﻿
+
+10. We can run these commands independently to test. 
+
+1﻿1. Tmux is easy to use. We can check its documents for commands and shortcuts.
 
 N﻿ow, I need to figure out a way in UserLand so that whenever the phone restarts it should trigger on its own. One possible way is adding it into crontab.
