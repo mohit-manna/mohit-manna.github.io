@@ -1,9 +1,9 @@
-title: manna018
-subtitle: blog on tech data engineering and fun
+title: Mohit Manna
+subtitle: Mohit Manna personal website on Data Engineering Blogs and fun. Blog on data warehouse concepts. Azure AWS and other data related tools
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog.. Hope you love it !!
 
-url: "https://manna018.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://mohit-manna.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
@@ -26,7 +26,7 @@ author_bio: Hi, my name is Mohit Manna. I am a Data Engineer who knows about cod
 author_hobbies: Playing outdoor games(Cricket, Football and Volleyball). 
 author_email: "mohitmanna49@gmail.com"
 author_location: India
-author_website_url: "https://manna018.github.io"
+author_website_url: "https://mohit-manna.github.io"
 typewrite-text: Welcome to my blog. Hope you love it !!
 
 author_work_experiences:
@@ -81,11 +81,11 @@ author_project_details:
 
 # social links
 twitter_username: manna_018
-github_username:  manna018
-#facebook_username: manna018
-linkedin_username: manna018
+github_username:  mohit-manna
+#facebook_username: mohit-manna
+linkedin_username: mohit-manna
 #behance_username: johndoe
-#instagram_username: manna018
+#instagram_username: mohit-manna
 #medium_username: johndoe
 #telegram_username: johndoe
 #dribbble_username: johndoe
@@ -164,7 +164,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-algolia
-  - jekyll-menus
 
 
 # Exclude from processing.

@@ -138,9 +138,9 @@ oozie.wf.application.path=${nameNode}/user/${user.name}/${examplesRoot}/apps/hiv
 
 # Sqoop Example
 Script files:
-1. [db.hsqldb.properties](https://github.com/manna018/oozie-examples/blob/main/examples/apps/sqoop/db.hsqldb.properties)
-2. [db.hsqldb.script](https://github.com/manna018/oozie-examples/blob/main/examples/apps/sqoop/db.hsqldb.script)
-3. [workflow.xml](https://github.com/manna018/oozie-examples/blob/main/examples/apps/sqoop/workflow.xml)
+1. [db.hsqldb.properties](https://github.com/mohit-manna/oozie-examples/blob/main/examples/apps/sqoop/db.hsqldb.properties)
+2. [db.hsqldb.script](https://github.com/mohit-manna/oozie-examples/blob/main/examples/apps/sqoop/db.hsqldb.script)
+3. [workflow.xml](https://github.com/mohit-manna/oozie-examples/blob/main/examples/apps/sqoop/workflow.xml)
 
 job.properties files(changed):
 ```
