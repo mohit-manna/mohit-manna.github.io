@@ -5,7 +5,7 @@ title: Hindsight Bias
 date: 2024-06-15T00:00:00.000Z
 thumbnail: https://i.makeagif.com/media/5-13-2022/Ev3Be-.gif
 category: psychology
-summary: Hindsight bias is the tendency to believe we "ee to sala hona hi tha" after an event has occurred, distorting our perception of predictability. Journaling is a simple yet effective tool to combat this bias by documenting our thoughts and predictions in real time.
+summary: when you think like this meme may be hindsight bias is working BTS, distorting our perception of predictability. Journaling is a simple yet effective tool to combat this bias
 ---
 # What is Hindsight bias?
 
