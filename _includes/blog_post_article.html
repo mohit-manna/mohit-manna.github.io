@@ -27,11 +27,11 @@
   </div>
 
   <div class="card-body" itemprop="articleBody">
-    <img
-      class="card-img-top"
-      src="{{site.url}}{{site.baseurl}}{{ page.thumbnail }}"
-      alt="{{ post.title }}"
-    />
+    {% if page.thumbnail contains 'http' %}
+        <img class="card-img-top" src="{{ page.thumbnail }}" alt="{{ page.title }}">
+    {% else %}
+        <img class="card-img-top" src="{{site.url}}{{site.baseurl}}{{ page.thumbnail }}" alt="{{ page.title }}">
+    {% endif %}
     <br />
     <br />
     {{ content }}
