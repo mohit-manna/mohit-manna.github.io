@@ -9,9 +9,7 @@ summary: when you think like this meme may be hindsight bias is working BTS, dis
 ---
 # What is Hindsight bias?
 
-Hindsight bias is one of those fascinating quirks of human psychology that we all experience, often without even realizing it. Without diving too deeply into the technical definition, think of it this way:whenever you think like this meme
-
-![Ee toh sala hona hi tha](https://i.makeagif.com/media/5-13-2022/Ev3Be-.gif){:.card-img-top}
+Hindsight bias is one of those fascinating quirks of human psychology that we all experience, often without even realizing it. Without diving too deeply into the technical definition, think of it this way:whenever you think like above meme
 
 there’s a good chance that hindsight bias is quietly working behind the scenes.
 
