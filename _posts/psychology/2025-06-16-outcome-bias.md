@@ -2,7 +2,7 @@
 layout: post
 author: Mohit Manna
 title: Outcome Bias
-date: 2024-06-16T00:00:00.000Z
+date: 2025-06-16T00:00:00.000Z
 thumbnail: https://i.postimg.cc/KvXdwZPD/image.png
 category: psychology
 summary: we tend to take decisions in our life by seeing outcomes from someone else's life, in this blog we take a look into it

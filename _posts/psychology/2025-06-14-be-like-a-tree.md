@@ -2,7 +2,7 @@
 layout: post
 author: Mohit Manna
 title: Be like a Tree
-date: 2024-06-14T00:00:00.000Z
+date: 2025-06-14T00:00:00.000Z
 thumbnail: https://i.postimg.cc/jShQPv2n/tree.jpg
 category: myArticles
 summary: We don't need to fight anyone, if we be like tree people will themselves seek us like they seek shade under tree in summer.
