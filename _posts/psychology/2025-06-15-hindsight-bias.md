@@ -2,7 +2,7 @@
 layout: post
 author: Mohit Manna
 title: Hindsight Bias
-date: 2024-06-15T00:00:00.000Z
+date: 2025-06-15T00:00:00.000Z
 thumbnail: https://i.makeagif.com/media/5-13-2022/Ev3Be-.gif
 category: psychology
 summary: when you think like this meme may be hindsight bias is working BTS, distorting our perception of predictability. Journaling is a simple yet effective tool to combat this bias
